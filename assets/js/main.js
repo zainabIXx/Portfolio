@@ -174,6 +174,8 @@ function scrollUp(){
 window.addEventListener('scroll', scrollUp);
 
 /*==================== DARK LIGHT THEME ====================*/
+
+
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'uil-sun';
@@ -204,6 +206,9 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+
+
 // Google recaptcha
 window.onload = function() { 
     var el = document.getElementById('g-recaptcha-response'); 
@@ -223,3 +228,4 @@ document.getElementById("check").onclick = function() {
       alert('Fill all the fields');
     }
   };
+
